@@ -23,9 +23,9 @@ h1 {
     color: #ffffff;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     animation: fadeIn 1s ease-in-out;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     line-height: 1.4;
-    font-weight: 250;
+    font-weight: 150;
     letter-spacing: 2px;
 }
 
@@ -34,11 +34,11 @@ h1 {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
-    font-weight: 150;
+    font-weight: 100;
 }
 
 .music-controls {
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .music-btn {
