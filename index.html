@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dad love mom</title>
     <link rel="stylesheet" href="styles.css">
-     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_3e92288ecf.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
     <div class="container">
         <h1>Chúc GIA LINH xinh đẹp ngày 1/6 thật vui vẻ và hạnh phúc</h1>
         <p class="message">From Bố with lots lots lots of loveee ❤️</p>
+        <div class="music-controls">
+            <button id="musicToggle" class="music-btn">🔊 Music: ON</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
