@@ -1,6 +1,13 @@
-// Rain of hearts effect on mouse hover
+// Rain of hearts effect on mouse hover - reduced fall rate
+let lastHeartTime = 0;
+const heartInterval = 100; // Create a heart every 100ms instead of every mousemove
+
 document.addEventListener('mousemove', function(e) {
-    createHeart(e.clientX, e.clientY);
+    const currentTime = Date.now();
+    if (currentTime - lastHeartTime > heartInterval) {
+        createHeart(e.clientX, e.clientY);
+        lastHeartTime = currentTime;
+    }
 });
 
 function createHeart(x, y) {
@@ -19,8 +26,8 @@ function createHeart(x, y) {
     // Remove heart element after animation completes
     setTimeout(() => {
         heart.remove();
-    }, 3000);
+    }, 4000);
 }
 
 // Console message
-console.log('DAD <3 MOM - Wishing lots of love and happiness!');
+console.log('Dad love mom - Wishing lots of love and happiness!');
