@@ -17,14 +17,14 @@ musicToggle.addEventListener('click', function() {
 });
 
 // Attempt to autoplay when page loads
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.play().catch(function(error) {
         // Autoplay is blocked, user needs to click to start
         console.log('Autoplay blocked. Music will play after user interaction.');
         musicToggle.textContent = '🔇 Music: OFF (Click to play)';
         backgroundMusic.pause();
     });
-});
+});*/
 
 // Rain of hearts effect on mouse hover - reduced fall rate
 let lastHeartTime = 0;
