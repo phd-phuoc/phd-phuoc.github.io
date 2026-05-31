@@ -37,6 +37,32 @@ h1 {
     font-weight: 250;
 }
 
+.music-controls {
+    margin-top: 60px;
+}
+
+.music-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.music-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.music-btn:active {
+    transform: scale(0.98);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
