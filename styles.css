@@ -5,12 +5,13 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Caveat', cursive;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -18,19 +19,22 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 7rem;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     animation: fadeIn 1s ease-in-out;
     margin-bottom: 30px;
     line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .message {
-    font-size: 1.8rem;
+    font-size: 3.6rem;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
+    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -41,5 +45,21 @@ h1 {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.heart {
+    position: fixed;
+    color: #ff69b4;
+    font-size: 2rem;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
     }
 }
