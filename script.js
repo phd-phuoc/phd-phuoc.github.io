@@ -1,13 +1,26 @@
-// Simple script to enhance the website
-console.log('Chúc Gia Linh xinh đẹp ngày 1/6 thật vui vẻ - From bố with lots of love ❤️');
-
-// Add a click event listener
-document.addEventListener('DOMContentLoaded', function() {
-    const heading = document.querySelector('h1');
-    heading.addEventListener('click', function() {
-        this.style.transform = 'scale(1.05)';
-        setTimeout(() => {
-            this.style.transform = 'scale(1)';
-        }, 200);
-    });
+// Rain of hearts effect on mouse hover
+document.addEventListener('mousemove', function(e) {
+    createHeart(e.clientX, e.clientY);
 });
+
+function createHeart(x, y) {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = '❤️';
+    
+    // Random horizontal offset
+    const offsetX = (Math.random() - 0.5) * 100;
+    
+    heart.style.left = (x + offsetX) + 'px';
+    heart.style.top = y + 'px';
+    
+    document.body.appendChild(heart);
+    
+    // Remove heart element after animation completes
+    setTimeout(() => {
+        heart.remove();
+    }, 3000);
+}
+
+// Console message
+console.log('DAD <3 MOM - Wishing lots of love and happiness!');
