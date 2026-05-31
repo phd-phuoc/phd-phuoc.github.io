@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
@@ -53,7 +53,7 @@ h1 {
     color: #ff69b4;
     font-size: 2rem;
     pointer-events: none;
-    animation: fall 3s linear forwards;
+    animation: fall 4s linear forwards;
     text-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
 }
 
