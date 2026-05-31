@@ -1,5 +1,5 @@
 // Simple script to enhance the website
-console.log('Hello Babe! Welcome to the website.');
+console.log('Hello Linh! Welcome to the website.');
 
 // Add a click event listener
 document.addEventListener('DOMContentLoaded', function() {
