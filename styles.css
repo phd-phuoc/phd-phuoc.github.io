@@ -19,13 +19,13 @@ body {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
     color: #ffffff;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     animation: fadeIn 1s ease-in-out;
     margin-bottom: 80px;
     line-height: 1.4;
-    font-weight: 350;
+    font-weight: 250;
     letter-spacing: 2px;
 }
 
@@ -34,7 +34,7 @@ h1 {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
-    font-weight: 250;
+    font-weight: 150;
 }
 
 .music-controls {
