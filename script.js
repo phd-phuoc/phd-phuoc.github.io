@@ -20,7 +20,7 @@ musicToggle.addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.play().catch(function(error) {
         // Autoplay is blocked, user needs to click to start
-        //console.log('Autoplay blocked. Music will play after user interaction.');
+        console.log(error);
         //musicToggle.textContent = '🔇 Music: OFF (Click to play)';
         //backgroundMusic.pause();
     });
