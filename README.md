@@ -1,6 +1,6 @@
-# Hello Babe Website
+# Hello Linh Website
 
-A simple website project that displays "Hello Babe" on the screen.
+A simple website project that displays "Hello Linh" on the screen.
 
 ## Features
 
