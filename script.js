@@ -1,6 +1,6 @@
 // Rain of hearts effect on mouse hover - reduced fall rate
 let lastHeartTime = 0;
-const heartInterval = 60; // Create a heart every 100ms instead of every mousemove
+const heartInterval = 10; // Create a heart every 100ms instead of every mousemove
 
 document.addEventListener('mousemove', function(e) {
     const currentTime = Date.now();
