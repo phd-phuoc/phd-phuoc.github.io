@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Playwrite VN', cursive;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@ h1 {
     animation: fadeIn 1s ease-in-out;
     margin-bottom: 30px;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -34,7 +34,7 @@ h1 {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 @keyframes fadeIn {
