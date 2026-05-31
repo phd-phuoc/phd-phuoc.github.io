@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.play().catch(function(error) {
         // Autoplay is blocked, user needs to click to start
         console.log(error);
-        musicToggle.textContent = '🔇 Music: OFF (Click to play)';
+        musicToggle.textContent = '🔇 Music: OFF (Bấm vào đây nèee)';
         backgroundMusic.pause();
     });
 });
