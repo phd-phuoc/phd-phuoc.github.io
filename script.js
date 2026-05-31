@@ -20,7 +20,7 @@ musicToggle.addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     backgroundMusic.play().catch(function(error) {
         // Autoplay is blocked, user needs to click to start
-        console.log(error);
+        //console.log(error);
         //musicToggle.textContent = '🔇 Music: OFF (Click to play)';
         //backgroundMusic.pause();
     });
@@ -29,12 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // Rain of hearts effect on mouse hover - reduced fall rate
 let lastHeartTime = 0;
 const heartInterval = 30; // Create a heart every 100ms instead of every mousemove
+let musicflag=0;
 
 document.addEventListener('mousemove', function(e) {
     const currentTime = Date.now();
     if (currentTime - lastHeartTime > heartInterval) {
         createHeart(e.clientX, e.clientY);
         lastHeartTime = currentTime;
+        if (musicflag==0){
+            backgroundMusic.play();
+            musicflag=1;
+        }
     }
 });
 
